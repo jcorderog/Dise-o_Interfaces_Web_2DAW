@@ -1,0 +1,29 @@
+@import url(../../../css/header.css);
+@import url(../../../css//footer.css);
+
+.container {
+    height: 500px;
+}
+
+.ejercicio ul {
+    list-style-type: none;
+    text-align: center;
+    width: 120px;
+    padding: 0;
+}
+
+.ejercicio li {
+    background-color: #00F;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+
+.ejercicio li a {
+    color: #FFF;
+    text-decoration: none;    display: block;
+    width: 100%;
+}
+
+.ejercicio li a:hover, .ejercicio li a:focus {
+    outline: 2px solid #F00;
+}

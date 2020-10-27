@@ -1,0 +1,19 @@
+@import url(../../../css/header.css);
+@import url(../../../css/footer.css);
+
+.container {
+    height: 500px;
+}
+
+.ejercicio>h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ejercicio>h2 {
+    text-transform: uppercase;
+}       
+
+.ejercicio strong {
+    text-decoration: underline;
+}

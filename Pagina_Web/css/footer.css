@@ -1,0 +1,12 @@
+footer {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(92, 92, 252);
+    padding: 1px;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 10%;
+}
