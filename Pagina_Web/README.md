@@ -21,14 +21,14 @@ ENLACE WEB ONLINE: https://jcorderog.000webhostapp.com/
 
 * Movil:
 
-	![GitHub Logo](./Sketch/MovileHomeEjericios.jpg)
+	![GitHub Logo](./Sketch/MovilHomeEjercicios.jpg)
 
 
-	![GitHub Logo](./Sketch/MovileFTP.jpg)
+	![GitHub Logo](./Sketch/MovilFTP.jpg)
 
 * Tablet:
 
-	![GitHub Logo](./Sketch/TabletHomeEjericios.jpg)
+	![GitHub Logo](./Sketch/TabletHomeEjercicios.jpg)
 
 	![GitHub Logo](./Sketch/TabletFTP.jpg)
 
@@ -36,6 +36,6 @@ ENLACE WEB ONLINE: https://jcorderog.000webhostapp.com/
 
 	![GitHub Logo](./Sketch/OrdernadorHome.jpg)
 
-	![GitHub Logo](./Sketch/OrdenadorEjericios.jpg)
+	![GitHub Logo](./Sketch/OrdenadorEjercicios.jpg)
 
 	![GitHub Logo](./Sketch/OrdenadorFTP.jpg)
