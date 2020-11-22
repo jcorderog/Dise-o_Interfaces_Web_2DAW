@@ -20,10 +20,76 @@
 
 .ejercicio li a {
     color: #FFF;
-    text-decoration: none;    display: block;
+    text-decoration: none;
+    display: block;
     width: 100%;
 }
 
-.ejercicio li a:hover, .ejercicio li a:focus {
+.ejercicio li a:hover,
+.ejercicio li a:focus {
     outline: 2px solid #F00;
+}
+
+@media (min-width: 576px) {
+    .barraNavegacion {
+        margin: 0px auto;
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .barraNavegacion p {
+        margin: 0px;
+    }
+
+    .ejercicio {
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px auto;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #enunciado,
+    #resultado {
+        width: 45%;
+        margin: 0px auto;
+    }
+
+    #resultado h1 {
+        font-size: 20px;
+    }
+    
+    .ejercicio p a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    }
+
+    .ejercicio p a:link {
+        color: #002352;
+    }
+
+    .ejercicio p a:visited {
+        color: #164a7a;
+    }
+
+    .ejercicio p a:focus {
+        border-bottom: 1px solid;
+        background: #98c6e4;
+    }
+
+    .ejercicio p a:hover {
+        border-bottom: 1px solid;
+        background: #aad3fe;
+    }
+
+    .ejercicio p a:active {
+        background: #011b53;
+        color: #aadafe;
+    }
 }

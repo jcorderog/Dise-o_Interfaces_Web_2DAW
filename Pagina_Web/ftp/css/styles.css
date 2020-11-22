@@ -9,3 +9,56 @@
 .cuerpo p {
     width: 100%;
 }
+
+@media (min-width: 576px) {
+    .barraNavegacion {
+        margin: 0px auto;
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .barraNavegacion p {
+        margin: 0px;
+    }
+
+    .cuerpo {
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px auto;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cuerpo img {
+        width: 50%;
+        margin: 10px auto;
+    }
+    
+    .cuerpo p {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .cuerpo {
+        display: block;
+        text-align: center;
+    }
+
+    .cuerpo img{
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    .cuerpo p {
+        text-align: left;
+        width: 90%;
+        margin: 10px auto;
+    }
+}

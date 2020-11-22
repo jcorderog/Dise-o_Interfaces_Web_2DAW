@@ -76,3 +76,62 @@
 .exampleboxshadowl {
     box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.76);
 }
+
+
+@media (min-width: 576px) {
+    .barraNavegacion {
+        margin: 0px auto;
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .barraNavegacion p {
+        margin: 0px;
+    }
+
+    .ejercicio {
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px auto;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #enunciado, #resultado {
+        width: 50%;
+    }
+
+    .ejercicio a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    }
+
+    .ejercicio a:link {
+        color: #002352;
+    }
+
+    .ejercicio a:visited {
+        color: #164a7a;
+    }
+
+    .ejercicio a:focus {
+        border-bottom: 1px solid;
+        background: #98c6e4;
+    }
+
+    .ejercicio a:hover {
+        border-bottom: 1px solid;
+        background: #aad3fe;
+    }
+
+    .ejercicio a:active {
+        background: #011b53;
+        color: #aadafe;
+    }
+}

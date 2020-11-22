@@ -3,7 +3,7 @@ header {
     background-color: rgb(92, 92, 252);
     padding: 16px 0px;
     margin-bottom: 40px;
-    position:sticky;
+    position: sticky;
     top: 0px;
 }
 
@@ -22,7 +22,7 @@ header ul {
     margin: 0px auto;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     list-style: none;
     padding: 0px;
@@ -32,7 +32,7 @@ header ul {
 
 .menu ul li {
     width: 33%;
-    margin: 0px;    
+    margin: 0px;
 }
 
 .menu ul li:hover {
@@ -42,4 +42,55 @@ header ul {
 .menu a {
     text-decoration: none;
     color: black;
+}
+
+@media (min-width: 576px) {
+    header {
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 70px;
+        padding: 0px;
+        z-index: 10;
+    }
+
+    header>a {
+        display: flex;
+        width: 50%;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    .menu ul {
+        margin: 0px;
+        height: 100%;
+    }
+
+    .menu li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu li>a {
+        margin: 0px auto;
+    }
+
+    .menu a:hover {
+        color: white;
+    }
+
+    .menu a {
+        transition: color 0.5s linear 0.2s;
+    }
 }
