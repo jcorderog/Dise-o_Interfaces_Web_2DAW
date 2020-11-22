@@ -16,3 +16,26 @@ La entrega de este ejercicio se realizará mediante un enlace a un repositorio d
 ENLACE WEB AXURE: https://uccjal.axshare.com
 
 ENLACE WEB ONLINE: https://jcorderog.000webhostapp.com/
+
+### Sketch: 
+
+* Movil:
+
+![GitHub Logo](/Sketch/Movile Home Ejericios.jpeg)
+
+
+![GitHub Logo](/Sketch/Movile FTP.jpeg)
+
+* Tablet:
+
+![GitHub Logo](/Sketch/Tablet Home Ejericios.jpeg)
+
+![GitHub Logo](/Sketch/Tablet FTP.jpeg)
+
+* Ordenador:
+
+![GitHub Logo](/Sketch/Ordernador Home.jpeg)
+
+![GitHub Logo](/Sketch/Ordenador Ejericios.jpeg)
+
+![GitHub Logo](/Sketch/Ordenador FTP.jpeg)
