@@ -21,21 +21,21 @@ ENLACE WEB ONLINE: https://jcorderog.000webhostapp.com/
 
 * Movil:
 
-![GitHub Logo](/Sketch/Movile Home Ejericios.jpeg)
+	![GitHub Logo](/Sketch/MovileHomeEjericios.jpeg)
 
 
-![GitHub Logo](/Sketch/Movile FTP.jpeg)
+	![GitHub Logo](/Sketch/MovileFTP.jpeg)
 
 * Tablet:
 
-![GitHub Logo](/Sketch/Tablet Home Ejericios.jpeg)
+	![GitHub Logo](/Sketch/TabletHomeEjericios.jpeg)
 
-![GitHub Logo](/Sketch/Tablet FTP.jpeg)
+	![GitHub Logo](/Sketch/TabletFTP.jpeg)
 
 * Ordenador:
 
-![GitHub Logo](/Sketch/Ordernador Home.jpeg)
+	![GitHub Logo](/Sketch/OrdernadorHome.jpeg)
 
-![GitHub Logo](/Sketch/Ordenador Ejericios.jpeg)
+	![GitHub Logo](/Sketch/OrdenadorEjericios.jpeg)
 
-![GitHub Logo](/Sketch/Ordenador FTP.jpeg)
+	![GitHub Logo](/Sketch/OrdenadorFTP.jpeg)
