@@ -17,6 +17,8 @@ ENLACE WEB AXURE: https://uccjal.axshare.com
 
 ENLACE WEB ONLINE: https://jcorderog.000webhostapp.com/
 
+ENLACE INDEX WEB LOCAL: [INDEX.html](./index.html) 
+
 ### Sketch: 
 
 * Movil:
@@ -34,7 +36,7 @@ ENLACE WEB ONLINE: https://jcorderog.000webhostapp.com/
 
 * Ordenador:
 
-	![GitHub Logo](./Sketch/OrdenadorHome.jpg = 100x50)
+	![GitHub Logo](./Sketch/OrdenadorHome.jpg)
 
 	![GitHub Logo](./Sketch/OrdenadorEjercicios.jpg)
 
