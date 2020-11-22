@@ -34,7 +34,7 @@ ENLACE WEB ONLINE: https://jcorderog.000webhostapp.com/
 
 * Ordenador:
 
-	![GitHub Logo](./Sketch/OrdernadorHome.jpg)
+	![GitHub Logo](./Sketch/OrdenadorHome.jpg)
 
 	![GitHub Logo](./Sketch/OrdenadorEjercicios.jpg)
 
