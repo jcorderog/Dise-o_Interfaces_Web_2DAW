@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container p-0 m-0 mx-auto">
+        <header class="w-100  d-flex flex-row-reverse sticky-top flex-md-row flex-md-wrap justify-content-center">
+            <img src="./img/caramelEtChocolaTitulo.png" class="mt-3 pr-3 align-self-start col-9 col-md-10 col-lg-6" alt="">
+            <div class="col-3 col-md-9">
+                <div class="py-4 mr-0 w-100 p-md-0">
+                    <nav class="navbar navbar-expand-md navbar-light text-white p-0">
+                        <button class="navbar-toggler m-auto p-0" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse mt-4 border border-dark border-bottom-0 border-right-0 border-left-0 py-md-2" id="navbarText">
+                            <ul class="navbar-nav mr-auto mx-lg-auto text-left">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html#menu">Menú</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html#especialidades">Especialidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html#conocenos">Conócenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html#galeria">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html#ubicacionYcontacto">Contactar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html#testimonios">Testimonios</a>
+                                </li>
+                                <li class="nav-item ml-md-4">
+                                    <a type="button"class="btn btn-dark" href="#">Realizar Pedido</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="cuerpo mt-4 ml-3 mr-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item active">Realizar Pedido</li>
+            </ol>
+            <form action="" class="w-100">
+                <div class="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#datosPersonales">
+                                Datos Personales:
+                            </a>
+                        </div>
+                        <div id="datosPersonales" class="collapse show" data-parent="#accordion">
+                            <div class="card-body row justify-content-center">
+                                <div class="name form-group col-10">
+                                    <label class="col-12" for="name">Nombre:</label>
+                                    <input class="form-control input-md col-12" name="name" id="name" type="text" placeholder="Introduzca su nombre" required="">
+                                </div>
+                                <div class="lastname form-group col-10">
+                                    <label class="col-12" for="lastname">Apellidos:</label>
+                                    <input class="form-control input-md col-12" name="lastname" id="lastname" type="text" placeholder="Introduzca sus apellidos" required="">
+                                </div>
+                                <div class="email form-group col-10">
+                                    <label class="col-12" for="email">Correo Electrónico:</label>
+                                    <input class="form-control input-md col-12" name="email" id="email" type="text" placeholder="Introduzca su correo electrónico" required="">
+                                </div>
+                                <div class="address form-group col-10">
+                                    <label class="col-12" for="address">Dirección:</label>
+                                    <input class="form-control input-md col-12" name="address" id="address" type="text" placeholder="Introduzca su dirección" required="">
+                                </div>
+                                <div class="phone form-group col-10">
+                                    <label class="col-12" for="phone">Teléfono:</label>
+                                    <input class="form-control input-md col-12" name="phone" id="phone" type="text" placeholder="Introduzca su teléfono" required="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#productos">
+                                Productos:
+                            </a>
+                        </div>
+                        <div id="productos" class="collapse" data-parent="#accordion">
+                            <div class="card-body row justify-content-center">
+                                <div class="alert alert-warning w-75 p-2" role="alert">
+                                    <p>Algunos productos pueden estar agotados.</p>
+                                </div>
+                                <div class="bebida1 form-group col-10">
+                                    <label class="col-12" for="name">Bebida 1:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Café solo</option>
+                                        <option>Agua 500ml</option>
+                                        <option>Café capuccino</option>
+                                        <option>Vaso de Leche</option>
+                                        <option>Zumo de Naranja</option>
+                                        <option>Chocolate Caliente</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bebida2 form-group col-10">
+                                    <label class="col-12" for="name">Bebida 2:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Café solo</option>
+                                        <option>Agua 500ml</option>
+                                        <option>Café capuccino</option>
+                                        <option>Vaso de Leche</option>
+                                        <option>Zumo de Naranja</option>
+                                        <option>Chocolate Caliente</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tostada1 form-group col-10">
+                                    <label class="col-12" for="name">Tostada 1:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Jamón Ibérico</option>
+                                        <option>Jamón y Tomate</option>
+                                        <option>Paté de la Casa </option>
+                                        <option>Philadelphia y Mermelada</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tostada2 form-group col-10">
+                                    <label class="col-12" for="name">Tostada 2:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Jamón Ibérico</option>
+                                        <option>Jamón y Tomate</option>
+                                        <option>Paté de la Casa </option>
+                                        <option>Philadelphia y Mermelada</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bolleria1 form-group col-10">
+                                    <label class="col-12" for="name">Bolleria 1:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Croissant</option>
+                                        <option>Croissant con Jamón Ibérico</option>
+                                        <option>Croissant con Pavo/York</option>
+                                        <option>Chausson aux pommes</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bolleria2 form-group col-10">
+                                    <label class="col-12" for="name">Bolleria 2:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Croissant</option>
+                                        <option>Croissant con Jamón Ibérico</option>
+                                        <option>Croissant con Pavo/York</option>
+                                        <option>Chausson aux pommes</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="crepes1 form-group col-10">
+                                    <label class="col-12" for="name">Crepes 1:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Crepe de Azucar</option>
+                                        <option>Crepe de Nutella</option>
+                                        <option>Crepe de York y Queso</option>
+                                        <option>Crepe de Mermelada</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="crepes2 form-group col-10">
+                                    <label class="col-12" for="name">Crepes 2:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Crepe de Azucar</option>
+                                        <option>Crepe de Nutella</option>
+                                        <option>Crepe de York y Queso</option>
+                                        <option>Crepe de Mermelada</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tarta form-group col-10">
+                                    <label class="col-12" for="name">Tarta Personalizada:</label>
+                                    <select class="form-control col-12" id="exampleFormControlSelect1">
+                                        <option>Selecionar producto</option>
+                                        <option>Bizcocho y nata</option>
+                                        <option>Huevo y nata</option>
+                                        <option>Chocolate y nata</option>
+                                        <option>Chocolate</option>
+                                    </select>
+                                    <div class="cantidad col-10 mx-auto mt-3">
+                                        <p>Cantidad:</p>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-25 m-0 text-center">
+                                            <input class="form-check-input h-100" type="radio" name="CantidadTarta" id="CantidadTarta" value="3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                    </div>
+                                    <div class="imagen col-10 mt-3 mx-auto">
+                                        <p class="w-100">Subir imágen personalizada(.img):</p>
+                                        <div class="w-100">                        
+                                            <input class="w-100" type="file" name="imagensubida">
+                                        </div>                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#fecha">
+                                Fecha de recogida:
+                            </a>
+                        </div>
+                        <div id="fecha" class="collapse" data-parent="#accordion">
+                            <div class="card-body row justify-content-center">
+                                <div class="alert alert-danger w-75 p-2" role="alert">
+                                    <p>Los campos de la fecha de entrega son obligatorios:</p>
+                                </div>
+                                <label for="start" class="col-5 mr-2 mb-3">Dia de recogida:</label>
+                                <input class="col-5 mb-3" type="date" id="fecha" name="trip-start" required="">
+                                <label class="col-5" for="start">Hora:</label>
+                                <select id="selectbasic" name="selectbasic" class="form-control col-5" required="">
+                                    <option value="0">Seleciona hora</option>
+                                    <option value="1">08:30</option>
+                                    <option value="2">09:00</option>
+                                    <option value="3">09:30</option>
+                                    <option value="4">10:00</option>
+                                    <option value="5">10:30</option>
+                                    <option value="6">11:00</option>
+                                    <option value="7">11:30</option>
+                                    <option value="8">12:00</option>
+                                    <option value="9">16:30</option>
+                                    <option value="10">17:00</option>
+                                    <option value="10">17:30</option>
+                                    <option value="10">18:00</option>
+                                    <option value="10">18:30</option>
+                                    <option value="10">19:00</option>
+                                    <option value="10">19:30</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-info m-4 mx-auto">Enviar pedido</button>
+            </form>
+        </div>
+        <footer class="w-100 p-4 text-center">
+            <div class="row">
+                <p class="col-12 col-lg-10 text-left pl-lg-4">Denunciar uso inadecuado</p>
+                <p class="m-0 col-12 col-lg-2">Jorge Cordero Gordillo</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

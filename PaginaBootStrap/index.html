@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container p-0 m-0 mx-auto col-lg-10">
+        <header class="w-100  d-flex flex-row-reverse sticky-top flex-md-row flex-md-wrap justify-content-center">
+            <img src="./img/caramelEtChocolaTitulo.png" class="mt-3 pr-3 align-self-start col-9 col-md-10 col-lg-6" alt="">
+            <div class="col-3 col-md-9">
+                <div class="py-4 mr-0 w-100 p-md-0">
+                    <nav class="navbar navbar-expand-md navbar-light text-white p-0">
+                        <button class="navbar-toggler m-auto p-0" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse mt-4 border border-dark border-bottom-0 border-right-0 border-left-0 py-md-2" id="navbarText">
+                            <ul class="navbar-nav mr-auto mx-lg-auto text-left">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#menu">Menú</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#especialidades">Especialidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#conocenos">Conócenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#galeria">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#ubicacionYcontacto">Contactar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#testimonios">Testimonios</a>
+                                </li>
+                                <li class="nav-item ml-md-4">
+                                    <a type="button"class="btn btn-dark" href="./formularioPedido.html">Realizar Pedido</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="cuerpo mt-4 ml-3 mr-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Inicio</li>
+            </ol>
+            <a class='flotante' href='#'><img src='./img/boton-flotante.png'/></a>
+            <div class="text-center">
+                <img class="w-50" src="./img/caramelEtChocola.png" alt="">
+            </div>
+            <div id="demo" class="carousel slide w-75 mx-auto mt-5 d-none d-lg-block d-xl-block" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                </ul>
+                <div class="carousel-inner w-100">
+                    <div class="carousel-item active w-100">
+                      <img class="w-100" src="./img/tarta3chocolates.jpg" alt="">
+                    </div>
+                    <div class="carousel-item w-100">
+                      <img class="w-100" src="./img/galeria1.png" alt="">
+                    </div>
+                    <div class="carousel-item w-100">
+                      <img class="w-100" src="./img/galeria3.png" alt="">
+                    </div>
+                    <div class="carousel-item w-100">
+                        <img class="w-100" src="./img/galeria5.png" alt="">
+                    </div>
+                    <div class="carousel-item w-100">
+                        <img class="w-100" src="./img/trataRedVelvet.jpg" alt="">
+                    </div>
+                    <div class="carousel-item w-100">
+                        <img class="w-100" src="./img/trataQueso.jpg" alt="">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <div class="line w-25 bg-dark mt-5 mx-auto"></div>
+            <a name="menu"><h5 class="mt-2 text-center">MENÚ</h5></a>
+            <div class="carta w-100 text-center">
+                <div class="dropdown">
+                    <button type="button" class="w-50 btn btn-danger mt-3 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alergenos</button>
+                    <ul class="alergenos dropdown-menu row">
+                        <li class="dropdown-item col-5 text-center">
+                            <img src="./img/gluten.png" class="w-50">
+                            <p>Gluten</p>
+                        </li>
+                        <li class="dropdown-item col-5 text-center">
+                            <img src="./img/lacteos.png" class="w-50">
+                            <p>Lácteos</p>
+                        </li>
+                        <li class="dropdown-item col-5 text-center">
+                            <img src="./img/huevos.png" class="w-50">
+                            <p>Huevos</p>
+                        </li>
+                        <li class="dropdown-item col-5 text-center">
+                            <img src="./img/frutos.png" class="w-50">
+                            <p>Frutos con Cascara</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bebidas row">
+                    <div class="line col-6 bg-dark mt-5 mx-auto"></div>
+                    <h6 class="col-10 mx-auto text-center mt-2 font-weight-bold">Bebidas</h6>
+                    <button type="button" class="vasoLeche btn col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus"
+                    title="Tipos:" data-content="-Leche Entera<br />-Leche Semidesnatada<br />-Leche Desnatada">
+                        <img class="w-75" src="./img/vasoLeche.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Vaso de Leche</p>
+                        <p class="m-0">1,00€</p>
+                    </button>
+                    <button type="button" class="cafeSolo col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Tipos:" data-content="-Café solo<br />-Descafeinado solo">
+                        <img class="w-75" src="./img/cafeSolo.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Café Solo</p>
+                        <p class="m-0">1,00€</p>
+                    </button>
+                    <button type="button" class="cafeCapuccino col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content="-Café<br />-Leche<br />-Espuma de Leche<br />-Vapor">
+                        <img class="w-75" src="./img/cafeCapuccino.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Café Capuccino</p>
+                        <p class="m-0">1,60€</p>
+                    </button>
+                    <button type="button" class="chocolateCaliente col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content="-Chocolate Negro<br />-Leche<br />-Cacao">
+                        <img class="w-75" src="./img/chocolateCaliente.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Chocolate Caliente</p>
+                        <p class="m-0">2,20€</p>
+                    </button>
+                    <button type="button" class="zumoNaranja col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content="-Naranja Natural">
+                        <img class="w-75" src="./img/zumoNaranja.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Zumo de Naranja</p>
+                        <p class="m-0">1,80€</p>
+                    </button>
+                    <button type="button" class="agua500 col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content="-Agua Mineral FontVella">
+                        <img class="w-75" src="./img/agua500.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Agua Mineral 500ml</p>
+                        <p class="m-0">0,70€</p>
+                    </button>
+                </div>
+                <div class="desayunos row">
+                    <div class="line col-6 bg-dark mt-5 mx-auto"></div>
+                    <h6 class="col-10 mx-auto text-center mt-2 font-weight-bold">Tostadas</h6>
+                    <button type="button" class="jamonIberico btn col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus"
+                    title="Ingredientes:" data-content='-Pan<br />-Jamón Ibérico<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png">'>
+                        <img class="w-75" src="./img/tostaJamon.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Jamón Ibérico</p>
+                        <p class="m-0">2,50€/3,00€</p>
+                    </button>
+                    <button type="button" class="jamonYtomate col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content='-Pan<br />-Jamón Ibérico<br />-Tomate<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png">'>
+                        <img class="w-75" src="./img/jamonYTomate.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Jamón y Tomate</p>
+                        <p class="m-0">2,60€/3,10€</p>
+                    </button>
+                    <button type="button" class="pate col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content='-Pan<br />-Paté<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png">'>
+                        <img class="w-75" src="./img/pate.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Paté de la Casa</p>
+                        <p class="m-0">1,10€/1,60€</p>
+                    </button>
+                    <button type="button" class="philadephiaYmermelada col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content='-Pan<br />-Philadelphia<br />-Mermelada<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png">'>
+                        <img class="w-75" src="./img/philadephiaYmermelada.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Philadelphia y Mermelada</p>
+                        <p class="m-0">1,10€/1,50€</p>
+                    </button>
+                </div>
+                <div class="bolleria row">
+                    <div class="line col-6 bg-dark mt-5 mx-auto"></div>
+                    <h6 class="col-10 mx-auto text-center mt-2 font-weight-bold">Bollería</h6>
+                    <button type="button" class="croissant btn col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus"
+                    title="Ingredientes:" data-content='-Levadura<br />-Azúcar<br />-Sal<br />-Harina<br />-Agua<br />-Mantequilla<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png">'>
+                        <img class="w-75" src="./img/croissant.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Croissant</p>
+                        <p class="m-0">1,20€</p>
+                    </button>
+                    <button type="button" class="croissantJamon col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content='-Levadura<br />-Azúcar<br />-Sal<br />-Harina<br />-Agua<br />-Mantequilla<br />-Jamón Ibérico<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png">'>
+                        <img class="w-75" src="./img/croissantJamon.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Croissant con Jamón Ibérico</p>
+                        <p class="m-0">3,00€</p>
+                    </button>
+                    <button type="button" class="croissantPavo col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content='-Levadura<br />-Azúcar<br />-Sal<br />-Harina<br />-Agua<br />-Mantequilla<br />-Pavo<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png">'>
+                        <img class="w-75" src="./img/croissantPavo.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Croissant con Pavo/York</p>
+                        <p class="m-0">2,00€</p>
+                    </button>
+                    <button type="button" class="chausson col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus" 
+                    title="Ingredientes:" data-content='-Harina<br />-Leche<br />-Agua<br />-Azucar<br />-Levadura<br />-Sal<br />-Mantequilla<br />-Manzana<br />-Zumo de Limón<br />-Azucar Moscado<br />-Canela en Polvo<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png">'>
+                        <img class="w-75" src="./img/Chausson.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Chausson aux pommes</p>
+                        <p class="m-0">1,40€</p>
+                    </button>
+                </div>
+                <div class="crepes row">
+                    <div class="line col-6 bg-dark mt-5 mx-auto"></div>
+                    <h6 class="col-10 mx-auto text-center mt-2 font-weight-bold">Crepes</h6>
+                    <button type="button" class="croissant btn col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus"
+                    title="Ingredientes:" data-content='-Huevo<br />-Harina<br />-Mantequilla<br />-Leche<br />-Sal<br />-Azucar<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png">'>
+                        <img class="w-75" src="./img/crepeAzucar.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Crepe de Azucar</p>
+                        <p class="m-0">2,00€</p>
+                    </button>
+                    <button type="button" class="croissant btn col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus"
+                    title="Ingredientes:" data-content='-Huevo<br />-Harina<br />-Mantequilla<br />-Leche<br />-Sal<br />-Azucar<br />-Nutella<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png"><img class="col-1 p-0" src="./img/frutos.png">'>
+                        <img class="w-75" src="./img/crepeNutella.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Crepe de Nutella</p>
+                        <p class="m-0">2,50€</p>
+                    </button>
+                    <button type="button" class="croissant btn col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus"
+                    title="Ingredientes:" data-content='-Huevo<br />-Harina<br />-Mantequilla<br />-Leche<br />-Sal<br />-Azucar<br />-York<br />-Queso<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png">'>
+                        <img class="w-75" src="./img/crepeYorkQueso.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Crepe de York y Queso</p>
+                        <p class="m-0">3,00€</p>
+                    </button>
+                    <button type="button" class="croissant btn col-5 p-3 border border-dark rounded text-center mt-4 mx-auto" data-toggle="popover" data-html="true" data-trigger="focus"
+                    title="Ingredientes:" data-content='-Huevo<br />-Harina<br />-Mantequilla<br />-Leche<br />-Sal<br />-Azucar<br />-Mermelada<br />Alérgenos:<br /><img class="col-1 p-0" src="./img/gluten.png"><img class="col-1 p-0" src="./img/lacteos.png"><img class="col-1 p-0" src="./img/huevos.png">'>
+                        <img class="w-75" src="./img/crepeMermelada.jpg" alt="">
+                        <div class="line w-50 bg-dark mt-2 mx-auto"></div>
+                        <p class="m-0">Crepe de Mermelada</p>
+                        <p class="m-0">2,20€</p>
+                    </button>
+                </div>
+            </div>
+            <div class="line w-25 bg-dark mt-5 mx-auto"></div>
+            <a name="especialidades"><h5 class="mt-2 text-center">ESPECIALIDADES</h5></a>
+            <div class="especialidades w-75 text-center row mx-auto mt-4">
+                <div class="tarta3chocolates col-12 col-md-5 col-lg-3 mb-5 card mx-auto">
+                    <div class="card-body">
+                        <img class="w-100 card-img-top" src="./img/tarta3chocolates.jpg" alt="">
+                        <p class="m-0 mt-2 lead mb-2 card-title">Tarta de tres Chocolates</p>
+                        <p class="card-text mb-3 w-75 mx-auto">Deliciosa tarta de tre tipos de chocolate(negro, con leche y blanco) y galleta.</p>
+                    </div>
+                </div>
+                <div class="redVelvet col-12 mb-5 col-md-5 col-lg-3 card mx-auto">
+                    <div class="card-body">
+                        <img class="w-100 card-img-top" src="./img/trataRedVelvet.jpg" alt="">
+                        <p class="m-0 mt-2 lead mb-2 card-title">Tarta Red Velvet</p>
+                        <p class="card-text mb-3 w-75 mx-auto">Deliciosa tarta de bizcocho cubierto de una cobertura de dulce de queso.</p>
+                    </div>
+                </div>
+                <div class="trataQueso col-12 col-md-5 col-lg-3 card mx-auto">
+                    <div class="card-body">
+                        <img class="w-100 card-img-top" src="./img/trataQueso.jpg" alt="">
+                        <p class="m-0 mt-2 lead mb-2 card-title">Tarta de Queso</p>
+                        <p class="card-text mb-3 w-75 mx-auto">Deliciosa tarta de queso, arandanos y frambuesas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line w-25 bg-dark mt-5 mx-auto"></div>
+            <a name="conocenos"><h5 class="mt-2 text-center">CONÓCENOS</h5></a>
+            <div class="conocenos mt-4">
+                <h6 class="small w-75 mx-auto text-center font-weight-bold">CAFETERÍA-PASTELERÍA CON OBRADOR PROPIO</h6>
+                <p class="w-75 mx-auto mt-3">Pastelería francesa hecha a diario en nuestro propio obrador con ingredientes naturales, desayunos con pan confeccionado y horneado a diario en nuestros hornos, zumo de naranja natural recién exprimido, café, más de 15 variedades de tés e infusiones, y para las meriendas... crepes recién hechas!</p>
+                <p class="w-75 mx-auto">Todo esto en el mejor ambiente para que disfrutes de nuestros productos compartiendo con los tuyos tus momentos más dulces.</p>
+                <p class="w-75 mx-auto">No te olvides de dejar tu valoración y comentario en el muro! Es muy importante para nosotros! Muchas gracias y esperamos compartir contigo todos esos grandes momentos!</p>
+            </div>
+            <div class="line w-25 bg-dark mt-5 mx-auto"></div>
+            <a name="galeria"><h5 class="mt-2 text-center">GALERÍA</h5></a>
+            <div class="galeria w-75 text-center row mx-auto mt-4">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria1.png" alt="">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria2.png" alt="">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria3.png" alt="">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria4.jpg" alt="">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria5.png" alt="">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria6.png" alt="">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria7.jpeg" alt="">
+                <img class="col-12 col-md-5 col-lg-4 my-2 mx-auto" src="./img/galeria8.png" alt="">
+            </div>
+            <div class="line w-25 bg-dark mt-5 mx-auto"></div>
+            <a name="ubicacionYcontacto"><h5 class="mt-2 text-center">CONTACTAR</h5></a>
+            <div class="ubicacionYcontacto mt-4 row">
+                <div class="embed-responsive embed-responsive-4by3 col-10 mx-auto rounded">
+                    <iframe width="854" height="480"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.37809126319!2d-6.124451184693675!3d37.38088987983312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd121390eb4e3fab%3A0x4c63e7681c5f62ee!2sCaramel%20et%20Chocolat!5e0!3m2!1ses!2ses!4v1606230675789!5m2!1ses!2ses"
+                      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                      tabindex="0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="contacto col-10 mx-auto text-center mt-4">
+                    <h6 class="small w-75 mx-auto text-center font-weight-bold">Contacto:</h6>
+                    <p>Teléfono: 605 80 69 28</p>
+                    <button class="btn btn-warning w-50">Llamar</button>
+                </div>
+                <div class="direccion col-10 mx-auto text-center mt-4">
+                    <h6 class="small w-75 mx-auto text-center font-weight-bold">Dirección:</h6>
+                    <p>Calle Padre Claudio Lopez, 14
+                        41807 Espartinas,
+                        Sevilla,
+                        España</p>
+                    <button class="btn btn-warning w-50">Cómo Llegar</button>
+                </div>
+                <div class="horario col-10 mx-auto text-center mt-4">
+                    <h6 class="small w-75 mx-auto text-center font-weight-bold">Horario:</h6>
+                    <div class="text-center w-75 mx-auto">
+                        <p>lun:	Cerrado</p>
+                        <p>mar:	8:30–12:30</p>
+                        <p>mié:	8:30–12:30, 16:30–20:00</p>
+                        <p>jue:	8:30–12:30, 16:30–20:00</p>
+                        <p>vie:	8:30–12:30, 16:30–20:00</p>
+                        <p>sáb:	8:30–12:30, 16:30–20:00</p>
+                        <p>dom:	8:30–12:30, 16:30–20:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line w-25 bg-dark mt-5 mx-auto"></div>
+            <a name="testimonios"><h5 class="mt-2 text-center">TESTIMONIOS</h5></a>
+            <div class="testimonios row pb-4">
+                <blockquote class="col-10 col-md-5 col-lg-3 mx-auto blockquote mt-4 border border-dark rounded p-3">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">100%</div>
+                    </div>
+                    <p class="text-justify small mt-3">
+                      "Mi cafetería preferida La calidad de todos los productos
+                      y el servicio es excelente, el ambiente que crean Maria y Antonio es buenísimo.
+                      El conjunto hace la cafetería muy acogedora. Deseando volver😘".
+                    </p>
+                    <p class="blockquote-footer">Mercedes G</p>
+                </blockquote>
+                <blockquote class="col-10 col-md-5 col-lg-3 mx-auto blockquote mt-4 border border-dark rounded p-3">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">100%</div>
+                    </div>
+                    <p class="text-justify small mt-3">
+                        "Un sitio agradable con el servicio muy correcto y con productos de
+                        calidad soy de fuera y me ha encantado el trato y su buen gusto en todo los detalles lo recomiendo".
+                    </p>
+                    <p class="blockquote-footer">fco j</p>
+                </blockquote>
+                <blockquote class="col-10 col-md-5 col-lg-3 mx-auto blockquote mt-4 border border-dark rounded p-3">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">100%</div>
+                    </div>
+                    <p class="text-justify small mt-3">
+                        "Decisión improvisada, gracias a vuestros comentarios, y ha sido una elección
+                       espectacular para una merienda exquisita. Volveremos".
+                    </p>
+                    <p class="blockquote-footer">José R</p>
+                </blockquote>
+            </div>
+        </div>
+        <footer class="w-100 p-4 text-center">
+            <div class="row">
+                <p class="col-12 col-lg-10 text-left pl-lg-4">Denunciar uso inadecuado</p>
+                <p class="m-0 col-12 col-lg-2">Jorge Cordero Gordillo</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+          $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>
