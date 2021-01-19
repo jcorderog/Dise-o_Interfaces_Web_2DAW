@@ -1,0 +1,53 @@
+////@access public
+////@author Jorge
+
+
+///VARIABLRES:
+
+///Breakpoints de tablet
+////@group breakpoint
+$tablet: 576px;
+///Breakpoints de ordenador
+////@group breakpoint
+$ordenador: 992px;
+
+///Anchura del container
+////@group contenedor
+$container-width: 100%;
+
+///Variables de color rojo
+////@group color
+$color-rojo: rgba(155, 0, 4, 1);
+///Variables de color dorado
+////@group color
+$color-dorado: rgb(211, 141, 0);
+///Variable del radio de los botones
+////@group botones
+$button-radius: 15px;
+///Variable del radio de la galeria
+////@group galeria
+$galeria-radius: 25px;
+///Variable del padding de los botones
+////@group botones
+$padding-button: 10px 15px;
+///Variables de la anchura del mapa
+////@group mapa
+$width-map: 100%;
+///Varaible de la altura del mapa
+////@group mapa
+$heigth-map: auto;
+///Variable de anchura del titulo del header
+////@group header
+$width-header-tittle: 70%;
+///Variable de tamaño del logo de la empresa
+////@group header
+$size-logo: 15%;
+///Variable de tamaño del boton desplegable del menu
+////@group botones
+$size-menu-button: 50px;
+///Variable del padding de los botones
+////@group botones
+$padding-button: 10px 15px;
+///Variable de tamaño de los iconos de las redes sociales
+////@group footer
+$social-icons-size: 10%;

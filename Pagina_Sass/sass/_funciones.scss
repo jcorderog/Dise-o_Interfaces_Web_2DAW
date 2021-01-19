@@ -1,0 +1,6 @@
+//Función que cambia la anchura del container dependiendo del BreakPoint
+@function calcularAnchura($breakpoint) {
+    @if  $breakpoint == $ordenador{
+        @return $container-width - 10%;
+    }
+}

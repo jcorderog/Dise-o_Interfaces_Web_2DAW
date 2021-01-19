@@ -1,0 +1,112 @@
+@import "../mixins";
+
+header {
+    color: $color-dorado;
+    background-color: $color-rojo;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 7px;
+
+    .logo {
+        width: $size-logo;
+        margin: 10px;
+    }
+
+    .titulo {
+        width: $width-header-tittle;
+        @include centrarLinea;
+        font-family: 'Lora', serif;
+
+        h1 {
+            margin: 0px;
+        }
+    }
+
+    button {
+        background-color: $color-dorado;
+        color: $color-rojo;
+        border-style: none;
+        border-radius: $button-radius;
+        -webkit-border-radius: $button-radius;
+        -moz-border-radius: $button-radius;
+        -ms-border-radius: $button-radius;
+        -o-border-radius: $button-radius;
+        display: none;
+        padding: $padding-button;
+        font-weight: bold;
+        font-size: 15px;
+        transition: transform 0.4s ease-in-out;
+        -webkit-transition: transform 0.4s ease-in-out;
+        -moz-transition: transform 0.4s ease-in-out;
+        -ms-transition: transform 0.4s ease-in-out;
+        -o-transition: transform 0.4s ease-in-out;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+    nav {
+        button {
+            display: none;
+        }
+        label {
+            img {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+
+    header {
+
+        h1 {
+            margin: 0px;
+        }
+
+        .titulo {
+            width: 60%;
+            padding: 20px 30px;
+            text-align: center;
+            
+        }
+
+        >button {
+            display: inline;
+            width: 15%;
+            height: 50px;
+        }
+
+        .logo {
+            width: 13%;
+        }
+    }
+}
+
+@media (min-width: $ordenador) { 
+    header {
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10% ;
+        .logo {
+            width: 100%;
+        }
+        .titulo {
+            font-size: 45px;
+            width: 100%;
+            padding: 0px;
+        }
+        .menu {
+            grid-row: 1/2;
+            grid-column: 3/4;
+            width: 100%;            
+        }
+        button {
+            grid-column: 4/5;
+            width: 90%;
+        }
+    }
+}
+

@@ -1,0 +1,103 @@
+@import 'variables';
+@import "mixins";
+@import "./funciones";
+//MENU
+@import 'header/menu-index';
+//HEADER
+@import 'header/header';
+//FOOTER
+@import 'footer/footer';
+
+/*HEADER*/
+/*Menu*/
+
+header li button {
+    display: block;
+    margin: 10px auto;
+}
+
+/*CUERPO*/
+
+.container {
+    width: $container-width;
+}
+
+.cuerpo > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @include centrarLinea;
+}
+
+.cuerpo > div > h3 {
+    grid-column: 1/3;
+    font-family: 'Lora', serif; 
+    color: $color-rojo;    
+}
+
+.cuerpo > div > div {
+    border-style: solid;
+    border-color: $color-rojo;
+    border-width: 3px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    margin: 5px auto;
+    padding: 5px;
+    width: 80%;
+    transition: transform 0.4s ease-in-out, background-color 0.4s linear, shadow 0.4s linear;
+    -webkit-transition: transform 0.4s ease-in-out, background-color 0.4s linear, shadow 0.4s linear;
+    -moz-transition: transform 0.4s ease-in-out, background-color 0.4s linear, shadow 0.4s linear;
+    -ms-transition: transform 0.4s ease-in-out, background-color 0.4s linear, shadow 0.4s linear;
+    -o-transition: transform 0.4s ease-in-out, background-color 0.4s linear, shadow 0.4s linear;
+}
+
+/*Animacion cuando pasas el cursor por encima de un producto*/
+.cuerpo > div > div:hover {
+    box-shadow: 2px 2px 1px 1px #999;
+    background-color: rgb(255, 206, 109);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.cuerpo > div > div > h5 {
+    color: $color-rojo;
+    font-family: 'Lora', serif;
+}
+
+/*Breakpoint para el tablet*/
+@media (min-width: $tablet) { 
+    header li button {
+        display: none;
+    }
+
+    .cuerpo > div {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .cuerpo > div > h3 {
+        grid-column: 1/4;  
+    }
+}
+
+/*Breakpoint para el ordenador*/
+@media (min-width: $ordenador) { 
+
+    .container {
+        width: calcularAnchura($ordenador);
+        @include centrarBloque;
+    }
+
+    .cuerpo > div {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .cuerpo > div > h3 {
+        grid-column: 1/5;  
+        font-size: 25px;
+    }
+}

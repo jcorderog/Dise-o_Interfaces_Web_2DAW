@@ -1,0 +1,53 @@
+@import "../mixins";
+
+footer {
+    margin-top: 10px;
+    background-color: $color-rojo;
+    color: $color-dorado;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    @include centrarLinea;
+}
+
+footer p {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+footer img {
+    width: $social-icons-size;
+    margin: 0px 5px;
+}
+
+@media (min-width: $tablet) { 
+    footer { 
+        flex-wrap: nowrap;
+    }
+
+    footer p {
+        align-items: center;
+        margin: 0px;
+        width: 70%;
+        text-align: left;
+        font-size: 25px;
+        margin-left: 25px;
+    }
+
+    .redesSociales {
+        width: 30%;
+    }
+
+    footer img { 
+        width: 15%;
+    }
+}
+
+@media (min-width: $ordenador) { 
+    footer {
+        p {
+            font-size: 40px;
+        }
+    }
+}

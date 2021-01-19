@@ -1,0 +1,257 @@
+@import "mixins";
+@import 'variables';
+@import "./funciones";
+//Header
+@import 'header/header';
+//Menu
+@import 'header/menu-index';
+//Footer
+@import 'footer/footer';
+
+
+
+.container {
+    width: $container-width;
+}
+
+/*CUERPO*/
+/*DATOS PERSONALES*/
+
+.datos, .fecha {
+    width: 90%;
+    @include centrarBloque;
+    font-family: 'Lora', serif;
+    color: $color-rojo;
+    margin-top: 30px;
+
+    h3 {
+        width: 80%;
+        @include centrarLinea;
+        @include centrarBloque;
+        font-size: 33px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 22px;
+        font-weight: bold;
+        display: block;
+        margin-left: 17%;
+    }
+
+    input {
+        width: 65%;
+        height: 25px;
+        margin-left: 17%;
+        margin-bottom: 20px;
+    }
+}
+
+/*Pedido*/
+
+.pedido {
+    font-family: 'Lora', serif;
+    .tostadas,.bocadillos, .guisos {
+        //Le aplico el mixixn para centrar el blocque
+        @include centrarBloque;
+        width: 80%;
+        margin-top: 10px;
+        #check-tostadas {
+            display: none;
+        }
+
+        #check-bocadillos {
+            display: none;
+        }
+
+        #check-guisos {
+            display: none;
+        }
+        
+        >label {
+            align-items: center;
+            display: flex;
+            border-color: $color-rojo;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 0px 15px;
+            justify-content: space-between;
+            h3 {
+                color: $color-rojo;
+            }
+            img {
+                text-align: right;
+                width: 25px;
+                transition: rotate 0.2s linear;
+                -webkit-transition: rotate 0.2s linear;
+                -moz-transition: rotate 0.2s linear;
+                -ms-transition: rotate 0.2s linear;
+                -o-transition: rotate 0.2s linear;
+            }
+        }
+        >div {
+            display: none;
+            width: 0px;
+            //Le aplico el mixin para centrar la linea
+            @include centrarLinea;
+            
+            div {
+                background-color: white;
+                border-radius: 35px;
+                -webkit-border-radius: 35px;
+                -moz-border-radius: 35px;
+                -ms-border-radius: 35px;
+                -o-border-radius: 35px;
+                margin: 5px auto;
+                padding: 5px;
+                width: 80%;
+                h5 {
+                    font-size: 17px;
+                    margin: 5px 0px;
+                }
+                input {
+                    width: 30%;
+                }
+            }
+        }
+
+        //El suiguiente codigo sirve para hacer los desplegables del pedido
+        
+        #check-tostadas:checked ~ .lista-tostadas{
+            margin-top: 0px;
+            padding-top: 10px;
+            display: grid;
+            background-color:  $color-rojo;
+            grid-template-columns: 50% 50%;
+            width: 100%;  
+        }
+
+        #check-tostadas:checked ~ .label-tostadas>img{
+            rotate: (90deg);
+        }
+
+        #check-bocadillos:checked ~ .lista-bocadillos{
+            margin-top: 0px;
+            padding-top: 10px;
+            display: grid;
+            background-color:  $color-rojo;
+            grid-template-columns: 50% 50%;
+            width: 100%;  
+        }
+
+        #check-bocadillos:checked ~ .label-bocadillos>img{
+            rotate: (90deg);
+        }
+
+        #check-guisos:checked ~ .lista-guisos{
+            margin-top: 0px;
+            padding-top: 10px;
+            display: grid;
+            background-color:  $color-rojo;
+            grid-template-columns: 50% 50%;
+            width: 100%;  
+        }
+
+        #check-guisos:checked ~ .label-guisos>img{
+            rotate: (90deg);
+        }
+    }
+}
+
+/*Botones*/
+
+.botones {
+    text-align: center;
+}
+
+.botones button {
+    border-radius: $button-radius;
+    -webkit-border-radius: $button-radius;
+    -moz-border-radius: $button-radius;
+    -ms-border-radius: $button-radius;
+    -o-border-radius: $button-radius;
+    padding: $padding-button;
+    margin: 15px;
+    background-color: $color-dorado;
+    color: $color-rojo;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    border-style: none;
+}
+
+/*Breakpoint para la tablet*/
+@media (min-width: $tablet) {
+
+    //Todo esto está anidado
+    header {
+        button {
+            display: none;
+        }
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 325px 270px 70px;
+        padding-top: 20px;
+        
+        .datos {
+            margin-top: 10px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border-style: solid;
+            border-radius: 25px;
+            padding-top: 20px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;   
+            -o-border-radius: 25px;
+            h3 {
+                font-size: 20px;
+            }
+            label {
+                font-size: 17px;
+            }
+        }  
+
+        .fecha {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            border-style: solid;
+            border-radius: 25px;
+            padding-top: 20px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            h3 {
+                font-size: 20px;
+            }
+            label {
+                font-size: 17px;
+            }
+        }
+
+        .pedido {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .botones {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    }
+}
+
+/*Breakpoint para el ordenador*/
+@media (min-width: $ordenador) { 
+
+    .container {
+        //Aquí le claculo la anchura del contaier con una función y centro el container con un mixin.
+        width: calcularAnchura($ordenador);
+        @include centrarBloque;
+    }
+}

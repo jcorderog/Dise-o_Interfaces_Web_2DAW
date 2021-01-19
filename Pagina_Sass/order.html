@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/Order/style-order.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="./img/Logo del Canilla Dorado.png" alt="">
+            <h1 class="titulo">PEDIDO</h1>
+            <button>PEDIR</button>
+            <nav class="menu">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <img src="./img/menu-icono.png" alt="">
+                </label>
+                <nav class="lista-menu">
+                    <ul>
+                        <a href="./index.html"><li>CONOCENOS</li></a>
+                        <a href="./index.html"><li>CONTACTO</li></a>
+                        <a href="./products.html"><li>PRODUCTOS</li></a>
+                        <li><button onclick="location.href = './order.html'">PEDIR</button></li>
+                    </ul>
+                </nav>
+            </nav>
+        </header>
+        <div class="cuerpo">
+            <form action="">
+                <div class="datos">
+                    <h3>DATOS PERSONALES</h3>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="telefono" id="telefono">
+                </div>
+                <div class="fecha">
+                    <h3>FECHA RECOGIDA</h3>
+                    <label for="dia">Dia:</label>
+                    <input type="date" name="dia" id="dia">
+                    <label for="hora">Hora:</label>
+                    <input type="text" name="hora" id="hora">
+                </div>
+                <div class="pedido">
+                    <div class="tostadas">
+                        <input type="checkbox" id="check-tostadas">
+                        <label for="check-tostadas" class="label-tostadas">
+                            <h3>TOSTADAS</h3>
+                            <img src="./img/flecha2.png" alt="">
+                        </label>
+                        <div class="lista-tostadas">                       
+                            <div>
+                                <img src="" alt="">
+                                <h5>Jamón</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                        
+                            <div>
+                                <img src="" alt="">
+                                <h5>Jamón York</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                        
+                            <div>
+                                <img src="" alt="">
+                                <h5>Pavo</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+
+                            <div>
+                                <img src="" alt="">
+                                <h5>Carne Mechá</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+
+                            <div>
+                                <img src="" alt="">
+                                <h5>Pate</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+
+                            <div>
+                                <img src="" alt="">
+                                <h5>Manteca de Lomo</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bocadillos">
+                        <input type="checkbox" id="check-bocadillos">
+                        <label for="check-bocadillos" class="label-bocadillos">
+                            <h3>BOCADILLOS</h3>
+                            <img src="./img/flecha2.png" alt="">
+                        </label>
+                        <div class="lista-bocadillos">  
+                            <div>
+                                <img src="" alt="">
+                                <h5>Pollo</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Lomo</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Lomo Adobado</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Bacon</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Cochinito</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guisos">
+                        <input type="checkbox" id="check-guisos">
+                        <label for="check-guisos" class="label-guisos">
+                            <h3>GUISOS</h3>
+                            <img src="./img/flecha2.png" alt="">
+                        </label>
+                        <div class="lista-guisos">  
+                            <div>
+                                <img src="" alt="">
+                                <h5>Carne con Tomate</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Carne en Salsa</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Menudo</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Higadito</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h5>Caldereta</h5>
+                                <label for="cant-jamon">Cantidad:</label>
+                                <input type="number" name="cant-jamon" id="cant-jamon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <button type="button">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>Mesón "El Canilla"</p>
+            <div class="redesSociales">
+                <img src="./img/facebook.png" alt="">
+                <img src="./img/google.png" alt="">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
